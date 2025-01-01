@@ -1,12 +1,25 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		%sveltekit.head%
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <!-- Primary Meta Tags -->
+        <title>%sveltekit.title%</title>
+        <meta name="title" content="Clock">
+        <meta name="description" content="A simple clock app built with SvelteKit.">
+        <meta name="author" content="Roshan RK Vashista">
+        <meta name="keywords" content="svelte, sveltekit, clock, app">
+        
+        <!-- Additional Meta Tags -->
+        <meta name="theme-color" content="#ffffff">
+        <meta name="application-name" content="Clock">
+        <meta name="robots" content="index, follow">
+        
+        %sveltekit.head%
+    </head>
+    <body data-sveltekit-preload-data="hover">
+        <div style="display: contents">%sveltekit.body%</div>
+    </body>
 </html>
