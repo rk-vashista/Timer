@@ -67,7 +67,7 @@
   });
 </script>
 
-<div class="w-full max-w-xl flex flex-col items-center gap-8">
+<div class="flex flex-col items-center gap-8">
   <ModeButtons {mode} {setTimer} />
   <FlipClock {time} />
   <Controls {isRunning} {startTimer} {stopTimer} {resetTimer} bind:showSettings />

@@ -1,25 +1,22 @@
 <script>
-    export let mode;
-    export let setTimer;
-  </script>
-  
-  <div class="flex gap-4">
+  export let mode;
+  export let setTimer;
+
+  const modes = [
+    { id: 'pomodoro', label: 'Pomodoro' },
+    { id: 'shortBreak', label: 'Short Break' },
+    { id: 'longBreak', label: 'Long Break' }
+  ];
+</script>
+
+<div class="flex gap-2 bg-gray-100 p-1 rounded-full">
+  {#each modes as { id, label }}
     <button
-      class="px-4 py-2 rounded-full {mode === 'pomodoro' ? 'bg-white text-black' : 'bg-transparent text-white border border-white/20'}"
-      on:click={() => setTimer('pomodoro')}
+      class="px-4 py-2 rounded-full transition-all duration-300 ease-in-out text-sm {mode === id ? 'bg-white text-gray-800 shadow-md' : 'text-gray-600 hover:bg-gray-200'}"
+      on:click={() => setTimer(id)}
     >
-      pomodoro
+      {label}
     </button>
-    <button
-      class="px-4 py-2 rounded-full {mode === 'shortBreak' ? 'bg-white text-black' : 'bg-transparent text-white border border-white/20'}"
-      on:click={() => setTimer('shortBreak')}
-    >
-      short break
-    </button>
-    <button
-      class="px-4 py-2 rounded-full {mode === 'longBreak' ? 'bg-white text-black' : 'bg-transparent text-white border border-white/20'}"
-      on:click={() => setTimer('longBreak')}
-    >
-      long break
-    </button>
-  </div>
+  {/each}
+</div>
+
