@@ -1,38 +1,31 @@
-# sv
+# Pomodoro Timer
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A clean and modern Pomodoro Timer web application built with SvelteKit and TailwindCSS.
 
-## Creating a project
+## Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+- Pomodoro, Short Break and Long Break modes
+- Customizable timer settings
+- Clean minimalist design 
+- Responsive layout that works on desktop and mobile
+- Smooth animations and transitions
+- Accessibility features built-in
 
+## Tech Stack
+
+- [SvelteKit](https://kit.svelte.dev/) - Web framework
+- [TailwindCSS](https://tailwindcss.com/) - Styling
+- [Vite](https://vitejs.dev/) - Build tool
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- npm/pnpm/yarn
+
+### Installation
+
+1. Clone the repository
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+git clone <repository-url>
